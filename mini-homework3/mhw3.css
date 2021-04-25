@@ -1,0 +1,273 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    position: absolute;
+    background-color: #87beca;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    font-size: 14px;
+    padding: 2px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+#barradiricerca{
+    top: 10 px;
+    left: 50vw;
+    
+}
+
+#links{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f1f1f2;
+}
+
+#links a{
+    margin: 10px;
+}
+a{
+    cursor: pointer;
+}
+
+a.button{
+    padding: 7px 12px;
+    border:  4px solid #f1f1f2;
+    border-radius: 100px;
+}
+a.button:hover{
+    border: 4px solid #7c7c7c;
+    background-color: #f1f1f2;
+    color:#7c7c7c;
+}
+
+header{
+    background-image:url(https://images.everyeye.it/img-sondaggi/beta-dei-videogiochi-quanto-influenzano-tuoi-acquisti-v5-822.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+header h1{
+    padding-top: 10px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Cuprum', sans-serif;
+    line-height: 55px;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+    padding-left: 10px;
+}
+
+footer{
+    background-color: rgb(69, 74, 80);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+section{
+    text-align: center;
+    margin: 10px;
+}
+
+section h1 {
+    color: goldenrod;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+#screenshots {
+    
+    color: goldenrod;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+
+
+
+
+#menu{
+    display: none;
+}
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: #f1f1f2;
+    margin: 5px 0;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#lista_prodottiPref{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#lista_prodottiPref div{
+    display: flex;
+    flex-direction:column ;
+    border: 1px solid black;
+    width: 30vw;
+    margin: 5px;
+}
+
+
+#lista_prodottiPref img {
+    position: relative;
+}
+
+
+#lista_prodotti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#lista_prodotti div {
+    display: flex;
+    flex-direction:column;
+    border: 1px solid grey;
+    width: 30vw;
+    margin: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#lista_prodotti h1{
+    position: relative;
+    font-size: 30px;
+    
+}
+
+#lista_prodotti h2{
+    position: relative;
+    cursor: pointer;
+}
+
+#lista_prodotti img{
+    position: relative;
+}
+
+#pref_button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+}
+
+#unpref_button{
+    width: 50px;
+    height: 50px;   
+}
+
+
+#news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    font-family: fantasy;
+  }
+
+  #news .articolo {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 5px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  #news .articolo h1{
+     font-family: 'Oswald', sans-serif;
+      color: rgb(31, 26, 26);
+      font-size: 15px;
+      font-style: normal;
+  }
+
+  #screen{
+      display: flex;
+      flex-wrap: wrap;
+      align-items:center;
+      
+  }
+
+  #screen div{
+      margin: 10px;
+  }
+  #screen div img{
+      width: 30vw;
+  }
+
+
+@media(max-width: 750px){
+    #links{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    body{
+        margin: 0;
+        font-size: 20px;
+    }
+    section{
+        margin: 10px 10px;
+    }
+    .store{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .store div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .store img{
+        height: 75%;
+        width: 75%;
+    }
+
+
+}
